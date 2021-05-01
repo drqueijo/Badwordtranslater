@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded',function(){
     })
     
     function translate (text){
-        return text
+        var chars = {'a':'@','e':'3','i':'1','o':'0'};
+        text.toLowerCase();
+        return text.replace(/[aeio]/gi, m => chars[m]);
     }
 })
